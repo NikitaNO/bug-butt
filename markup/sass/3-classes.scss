@@ -1,0 +1,67 @@
+.reset-for-btn {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+._center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.txt-center {text-align: center;}
+
+.txt-light {font-weight: 300 !important;}
+.txt-regular {font-weight: 400 !important;}
+.txt-bold {font-weight: 700 !important;}
+
+.transition {transition: .2s;}
+
+
+
+// *******************
+// *  Main Elements  * - only view, not positioning
+// *******************
+
+.main-title {
+	@extend .txt-regular;
+	font-size: 67px;
+	color: #fff;
+}
+
+.main-subtitle {
+	@extend .txt-regular;
+	font-size: 30px;
+	color: $golden;
+}
+
+.main-input {
+	@extend .txt-regular, .transition;
+	border: 2px solid $marine-darken-2;
+	color: $marine;
+	background: rgba(#000, .85);
+	outline: none;
+	font-size: 23px;
+	border-radius: 30px;
+	padding: 0 25px;
+	height: 50px;
+	width: 100%;
+	cursor: pointer;
+}
+.main-input:hover {
+	border: 2px solid $golden-lighten-1;
+	color: $golden-lighten-1;
+	box-shadow: 0 0 3px 1px rgba(#fff, .5);
+}
+
+.main-btn {
+	@extend .reset-for-btn, .txt-bold, .transition;
+	background: $marine-darken-1;
+	border-radius: 30px;
+	padding: 0 35px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #111;
+	height: $btn-height;
+}
